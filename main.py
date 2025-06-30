@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import requests
-from config import API_KEY  # ✅ import the API key here
+from config import API_KEY  
 
 def get_weather():
     city = city_entry.get()
@@ -30,7 +30,7 @@ def get_weather():
 # GUI setup
 root = tk.Tk()
 root.title("Weather App")
-root.geometry("300x300")
+root.geometry("400x300")
 root.resizable(False, False)
 
 label = tk.Label(root, text="Enter City:", font=("Arial", 12))
